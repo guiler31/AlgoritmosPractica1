@@ -1,0 +1,5 @@
+﻿  Backtracking.cpp
+c:\users\jorge\documents\github\algoritmospractica1\backtracking\backtracking.cpp(52): fatal error C1010: final de archivo inesperado al buscar la directiva de encabezado precompilado. Compruebe si olvidó agregar '#include "pch.h"' al código fuente?
+  laberinto.cpp
+c:\users\jorge\documents\github\algoritmospractica1\backtracking\laberinto.cpp(40): fatal error C1010: final de archivo inesperado al buscar la directiva de encabezado precompilado. Compruebe si olvidó agregar '#include "pch.h"' al código fuente?
+  Generando código...
