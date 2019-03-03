@@ -6,10 +6,9 @@
 
 
 using namespace std;
-int filas, columnas, indices, lengthCount, aux;
+int filas, columnas, indices, lengthCount, aux, contador;
 int* celdasBloqueadas;
-int celdaBloqueada;
-
+bool condicion;
 
 
 int main() {
@@ -34,7 +33,8 @@ int main() {
 		cin.ignore(256, '\n');
 		cin >> columnas;
 	}
-	celdasBloqueadas = new (nothrow) int[filas*columnas];
+	celdasBloqueadas = new int[filas*columnas];
+	contador = 0;
 	do {
         cout << "¿Indices de la celda bloqueada (para salir, introducir  00)?" << endl;
         cin >> indices;
@@ -42,8 +42,12 @@ int main() {
         lengthCount = 0;
         for (; aux != 0; aux /= 10, lengthCount++);
         if (indices == 00) {
+			condicion = false;
             lengthCount = 2;
-        }
+		}
+		else {
+			condicion = true;
+		}
         while (!cin || indices < 0 || lengthCount!=2) {
             cout << "Por favor introduzca dos numeros naturales" << endl;
             cin.clear();
@@ -53,9 +57,21 @@ int main() {
             lengthCount = 0;
             for (; aux != 0; aux /= 10, lengthCount++);
         }
-		celdasBloqueadas[indices];
-    } while (indices !=00);
+		cout << indices;
 
+		if (condicion == true && lengthCount == 2)
+		{
+
+			indices >> celdasBloqueadas[contador];
+			contador++;
+		}
+    } while (indices !=00);
+	cout << "You have entered: " << endl;
+
+
+	for (int n = 0; n < contador; n++) {
+		cout << celdasBloqueadas[n] << ", ";
+	}
 	delete[] celdasBloqueadas;
 
 
