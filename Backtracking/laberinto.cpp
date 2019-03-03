@@ -1,9 +1,6 @@
 #include "laberinto.h"
 //Movimientos permitidos: arriba, derecha, abajo, izquierda;
 
-
-
-
 Laberinto::Laberinto(int filas, int columnas)
 {
 	int** a = new int*[this->filas];
@@ -11,10 +8,10 @@ Laberinto::Laberinto(int filas, int columnas)
 		a[i] = new int[this->columnas];
 }
 
-Laberinto Laberinto::moverCasilla(int ** movimiento)
+/*Laberinto Laberinto::moverCasilla(int ** movimiento)
 {
 	return Laberinto();
-}
+}*/
 
 int ** Laberinto::setInicio(int ** casillaInicial)
 {
@@ -26,7 +23,7 @@ int ** Laberinto::setFin(int ** casillaFinal)
 	return nullptr;
 }
 
-int ** Laberinto::setBloqueos(int ** casillasBloqueadas)
+int ** Laberinto::setBloqueos(int * casillasBloqueadas)
 {
 	return nullptr;
 }

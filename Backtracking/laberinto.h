@@ -1,4 +1,3 @@
-#pragma once
 class Laberinto
 {
 
@@ -7,7 +6,7 @@ public:
 	Laberinto moverCasilla(int** movimiento);
 	int** setInicio(int** casillaInicial);
 	int** setFin(int** casillaFinal);
-	int** setBloqueos(int** casillasBloqueadas);
+	int** setBloqueos(int* casillasBloqueadas);
 	virtual ~Laberinto();
 
 private:
